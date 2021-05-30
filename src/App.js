@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+//import Clicker from './Clicker/Clicker';
+//import RollDice from './RollDice/RollDice';
+//import ScoreKeeper from './ScoreKeeper/ScoreKeeper';
+ //import IconList from './Icon List/IconList';
+//import Lottery from './Lottery/Lottery';
+//import CoinFlip from './Coin Flip/CoinFlip';
+import BoxContainer from './Color Boxes/BoxContainer';
 
-function App() {
-  return (
+class App extends Component {
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {// <Clicker /> 
+     //<RollDice /> 
+    // <ScoreKeeper />
+    //<IconList />
+     // <Lottery title='mini lot' numBalls={10} maxNum={70} />
+     //<CoinFlip />
+     }
+     <BoxContainer />
     </div>
   );
+  }
 }
 
 export default App;
